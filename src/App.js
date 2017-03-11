@@ -19,14 +19,16 @@ class App extends Component {
 
   render() {
     const { clicked } = this.state;
+
     console.log(clicked);
+
     return (
       <div>
         <div>
           <input type="submit" value="ClickMe" onClick={this.toggleClicked} />
           </div>
           {clicked && (
-            <div>
+            <div id="iclicked">
               Clicked
             </div>
           )}
